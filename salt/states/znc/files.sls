@@ -1,5 +1,10 @@
-include:
-    - common
+znc_packages:
+    pkg:
+        - installed
+        - skip_verify: True
+        - refresh: True
+        - pkgs:
+            - gcc-c++
 
 /root/znc-1.6.3.tar.gz:
     file.managed:

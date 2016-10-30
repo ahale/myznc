@@ -12,6 +12,5 @@ common_packages:
             - openssl-devel
             - redhat-rpm-config
             - ca-certificates
-            - gcc-c++
             - libffi-devel
             - augeas-libs
