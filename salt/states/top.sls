@@ -1,7 +1,7 @@
 base:
   '*':
     - common
-    - letsencrypt
+    - common.letsencrypt
 
   'environment:tools':
       - match: grain
