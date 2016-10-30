@@ -25,7 +25,7 @@ configure_source:
         - name: sh configure
         - cwd: /root/znc-1.6.3/
         - require:
-            cmd: untar_source
+            - cmd: untar_source
 
 make_from_source:
     cmd:
@@ -33,7 +33,7 @@ make_from_source:
         - name: make
         - cwd: /root/znc-1.6.3/
         - require:
-            cmd: configure_source
+            - cmd: configure_source
 
 make_install:
     cmd:
@@ -41,4 +41,4 @@ make_install:
         - name: make install
         - cwd: /root/znc-1.6.3/
         - require:
-            cmd: make_from_source
+            - cmd: make_from_source
