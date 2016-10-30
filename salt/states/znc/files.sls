@@ -14,7 +14,7 @@ znc_packages:
         - group: root
         - mode: 644
         - require:
-            - sls: common
+            - pkg: znc_packages
 
 untar_source:
     cmd:
