@@ -10,7 +10,6 @@ common_packages:
             - gcc
             - dialog
             - openssl-devel
-            - redhat-rpm-config
             - ca-certificates
             - libffi-devel
             - augeas-libs
